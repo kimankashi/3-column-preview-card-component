@@ -6,9 +6,124 @@
   box-sizing: border-box;
 }
 
-.body {
-  font-family: "Lexend Deca", sans-serif;
+.debug1 {
+  border: solid 1px red;
 }
+.debug2 {
+  border: solid 1px blue;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-light-grey: hsl(0, 0%, 95%);
+  --Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  background: var(--Very-light-grey);
+}
+.wrapper {
+  min-height: 100vh;
+}
+main {
+  width: 95%;
+  margin-inline: auto;
+  margin-block: 60px;
+}
+
+.sedan {
+  border-radius: 10px 10px 0 0;
+  background-color: var(--Bright-orange);
+}
+.suv {
+  background-color: var(--Dark-cyan);
+}
+.lux {
+  border-radius: 0 0 10px 10px;
+  background-color: var(--Very-dark-cyan);
+}
+.sedan,
+.suv,
+.lux {
+  padding: 40px 50px 40px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+img {
+  align-self: flex-start;
+}
+
+p {
+  color: var(--Transparent-white-paragraphs);
+  line-height: 1.5;
+}
+
+button {
+  align-self: self-start;
+  padding-inline: 24px;
+  padding-block: 12px;
+  border-radius: 24px;
+  border: solid 2px transparent;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--Very-light-grey);
+  margin-top: auto;
+}
+.sedan button {
+  color: var(--Bright-orange);
+}
+.suv button {
+  color: var(--Dark-cyan);
+}
+.lux button {
+  color: var(--Very-dark-cyan);
+}
+button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--transparent-white);
+  color: var(--transparent-white);
+}
+
 h1 {
   font-family: "Big Shoulders Display", sans-serif;
+  text-transform: uppercase;
+  color: var(--Very-light-grey);
+}
+
+@media screen and (min-width: 375px) {
+  main {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 1080px) {
+  .wrapper {
+    display: grid;
+    place-items: center;
+  }
+  main {
+    display: flex;
+    width: auto;
+  }
+  .sedan,
+  .suv,
+  .lux {
+    padding: 40px 30px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 300px;
+  }
+  .sedan {
+    border-radius: 10px 0 0 10px;
+  }
+  .lux {
+    border-radius: 0 10px 10px 0;
+  }
 }
