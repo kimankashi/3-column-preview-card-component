@@ -9,6 +9,76 @@
 .body {
   font-family: "Lexend Deca", sans-serif;
 }
+section{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
 h1 {
   font-family: "Big Shoulders Display", sans-serif;
+}
+.first-image{
+  background-color: hsl(31, 77%, 52%);
+   
+  width: 300px;
+  height: 300px;
+  padding: 15px; 
+  margin: auto;
+}
+
+h1 {
+  margin-right: 50px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+p{
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 5px;
+}
+.second-image{
+  background-color:  hsl(184, 100%, 22%);
+ line-height: 25 px;
+  width: 300px;
+  height: 300px;
+  padding: 15px; 
+  margin: auto;
+  
+
+}
+.third-image{
+  background-color: hsl(179, 100%, 13%);
+  
+  width: 300px;
+  height: 300px;
+  padding: 15px; 
+  margin: auto;
+}
+button{
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  margin-top: 30px;
+}
+button:hover{
+  background-color: transparent;
+  cursor: pointer;
+  color: hsla(0, 0%, 100%, 0.75);
+  border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+.debugg{
+  height: 400px;
+  width: 200px;
+  margin: auto;
+}
+.debugg{
+  margin: 0;
+}
+
+.button1{
+  color: hsl(31, 77%, 52%);
+}
+.button2{
+  color: hsl(184, 100%, 22%);
+}
+.button3{
+  color: hsl(179, 100%, 13%);
+  margin-top: 23px;
 }
